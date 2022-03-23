@@ -27,6 +27,8 @@ sh4.2# mount -o remount,rw /
 7. Reset the root password:
 ```shell
 sh4.2# passwd root
+or if the machine is using QWERTY and your device is AZERTY, you can simply use this method to write the password in plain text to avoid errors:
+echo "your passwd here" | passwd --stdin root 
 ```
 When prompted to, enter your new root password and confirm by pressing the <kbd>Enter</kbd> key. Enter the password for the second time to make sure you typed it correctly and confirm with <kbd>Enter</kbd> again. If both passwords match, a message informing you of a successful root password change will appear.
 
